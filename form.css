@@ -1,0 +1,112 @@
+html{   
+    font-size: 100%;
+}
+
+.contianer  {
+    width: 1200px;
+    margin: 0 auto;
+}
+.form   {
+    margin-top: 2rem ;
+}
+.form .form-title {
+    font-size: 1.5rem;
+    font-family: vazir ; 
+    font-weight: bold;
+    color:brown;   
+    margin-bottom: 1rem;
+}
+.form label{
+    font-size: 1.2rem;
+    font-family: vazir;
+    font-weight: bold;
+}
+.form label,
+.form  input:not([type="checkbox"]){
+    display: block;
+    margin-bottom: 0.7rem;
+}
+.checkbox input {
+    display: none;
+}
+.checkbox{
+    position: relative;
+    padding-right: 2.1rem;
+    padding-top: .4rem;
+}
+.checkbox .checkmark{
+    height: 25px;
+    width: 25px;
+   background-color: #eee;
+   position: absolute;
+   right: 0;
+   top: 0;
+   border-radius: 6px;
+}
+.form input.form-control{
+    width: 100%;
+    padding: 0.6rem .6rem;
+    border: 1px solid rgb(75, 53, 53);
+    border-radius: 6px;
+}
+.checkbox:hover .checkmark{
+    background-color: rgb(200, 200, 203);
+}
+.checkbox input:checked  ~ .checkmark{
+background-color: rgb(62, 52, 148);
+}
+.checkmark::after{
+    content: "";
+    position: absolute;
+    display: none;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    top: 5px;
+    right: 8px;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+.checkbox input:checked  ~ .checkmark::after{
+    display: block;
+}
+.form input:focus{
+    background-color: rgb(193, 193, 233);
+    outline: none;
+    border: 1px solid rgb(93, 93, 233);
+}
+.form input.form-control::placeholder{
+    color: red;
+    font-family:vazir;
+    font-size: 1rem;
+}
+.form input.form-control::-moz-placeholder{
+    color: red;
+}
+.form input.form-control:-moz-placeholder{
+    color: red;
+}
+.form input.form-control::-webkit-input-placeholder{
+    color: red;
+}
+.form input:invalid
+                          {
+    background-color: rgb(223, 127, 127);
+    border: 1px solid rgb(232, 78, 78) !important;
+}
+.btn{
+    border: none;
+    font-family: vazir;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+.btn-success{
+    background-color: rgb(46, 184, 46);
+    color: white;
+    border: 1px solid green;
+}
+.btn-danger{
+    background-color: rgb(240, 53, 53);
+    color: white;
+    border: 1px solid red;
+    }
