@@ -1,0 +1,46 @@
+.header{
+    background-color: #000000;
+    grid-column: 1 / -1;
+    background-image: linear-gradient(to bottom, #4d4c4c4f, #000000), url(../pics/istockphoto-1458215521-612x612.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    grid-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+@media screen and (max-width:350px) {
+    .header{
+        background-position-x: 10%;
+    }
+}
+
+.header1{
+    font-size: 30px;
+    color: white;
+}
+.header2{
+    color: white;
+    font-size: 40px;
+}
+.header-text{
+    color: orange;
+}
+.header-btn{
+    padding: 20px 30px;
+    border-radius: 5px;
+    color: white;
+    background-color: orange;
+    border: 1px solid orange;
+    font-family: sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition:  all 0.4s;
+    justify-self: center;
+}
+.header-btn:hover{
+ background-color: white;   
+color: orange;
+}
+

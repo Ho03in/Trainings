@@ -1,0 +1,40 @@
+.gallery{
+    background-color: rgb(0, 174, 255);
+    grid-column: 1 / -1;
+}
+
+.gallery-section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, 280px);
+    grid-template-areas: "gallery_1 gallery_1 gallery_2" "gallery_3 gallery_4 gallery_2" "gallery_3 gallery_5 gallery_5";
+    padding: 20px 10px;
+    gap: 1rem ;
+}
+.image-gallery{
+    width: 100%;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery1{
+    grid-area: gallery_1;
+    background-image: url(../pics/gallery1.jpg)
+}
+.gallery2{
+    grid-area: gallery_2;
+    background-image: url(../pics/gallery2.jpg);
+}
+.gallery3{
+    grid-area: gallery_3;
+    background-image: url(../pics/gallery3.webp);
+}
+.gallery4{
+    grid-area: gallery_4;
+    background-image: url(../pics/gallery4.jfif);
+}
+.gallery5{
+    grid-area: gallery_5;
+    background-image: url(../pics/gallery5.jpg);
+}
